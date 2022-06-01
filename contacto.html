@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeStyle</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- FONT OSWALD -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="container">
+
+        <nav class="nav-main">  
+            <img src="img/brand.png" alt="CoffeeStyle LOGO"  class="nav-brand">                          
+            <ul class="nav-menu show">  <!-- Le agrego la clase 'show' para sber cuando mostrarlo con el boton -->
+                <li>
+                    <a href="#"> Historia del cafe </a>
+                </li>
+                <li>
+                    <a href="#"> Tipos de cafe </a>
+                </li>
+                <li>
+                    <a href="#"> Curiosidades </a>
+                </li>
+                <li>
+                    <a href="#"> Latte Art </a>
+                </li>
+                <li>
+                    <a href="#"> Cursos </a>
+                </li>
+                <li>
+                    <a href="contacto.html"> ¡Contáctanos! </a>
+                </li>
+                <li>
+                    <a href="index.html"> Volver </a>
+                </li>
+            </ul>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <hr>
+
+        <section class="contact">
+            <div class="u-wrapper">
+                <div class="contact-content">
+                    <form id="form" action="" class="form">
+                        <h3 class="tag"><span>¿Tienes alguna duda? ¡Contactanos!</span></h3>
+
+                        <label for="name">Nombre Completo <span>*</span></label>
+                        <input name="name" required type="text" id="name" placeholder="Nombre">
+
+                        <label for="email">Correo electrónico <span>*</span></label>
+                        <input name="email" type="text" id="email" required placeholder="coffeeStyle@gmail.com">
+
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+
+                        <button type="submit" class="btn" id="validate"> Enviar mensaje</button>
+                    </form>
+                   
+                </div>
+            </div>
+
+        </section>
+    
+        <section class="social">
+            <p>¡Siguemos en nuestras redes sociales!</p>
+            <div class="links">
+                <a href="#"> 
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#"> 
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#"> 
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="footer-links">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Titulo 1</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Titulo 2</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Titulo 3</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Titulo 4</h3>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Titulo 1</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Titulo 2</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Titulo 3</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Titulo 4</h3>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Titulo 1</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Titulo 2</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Titulo 3</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Titulo 4</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <h3> Coffee Style Copyright</h3>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
