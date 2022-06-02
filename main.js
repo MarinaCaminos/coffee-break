@@ -22,16 +22,49 @@ function validate(){
     let result = validateName(inputName.value)
     errorName.hidden = result
     existsError = existsError || !result
+    if(!existsError) {
+        inputName.setCustomValidity('');
+    } else {
+        inputName.setCustomValidity('Field must be a number.');
+        inputName.reportValidity();
+        return;
+    }
 
     const errorLastName = document.getElementById('errorLastName')
     result = validateName(inputLastName.value)
     errorLastName.hidden = result
     existsError = existsError || !result
+    if(!existsError) {
+        inputLastName.setCustomValidity('');
+    } else {
+        inputLastName.setCustomValidity('Field must be a number.');
+        inputLastName.reportValidity();
+        return;
+    }
 
     const errorEmail = document.getElementById('errorEmail')
     result = validateEmail(inputEmail.value)
     errorEmail.hidden = result
     existsError = existsError || !result
+    if(!existsError) {
+        inputEmail.setCustomValidity('');
+    } else {
+        inputEmail.setCustomValidity('Field must be a number.');
+        inputEmail.reportValidity();
+        return;
+    }
+
+    const errorMessage = document.getElementById('errorMessage')
+    result = validateEmail(inputMessage.value)
+    errorMessage.hidden = result
+    existsError = existsError || !result
+    if(!existsError) {
+        inputMessage.setCustomValidity('');
+    } else {
+        inputMessage.setCustomValidity('Field must be a number.');
+        inputMessage.reportValidity();
+        return;
+    }
 
     if(!existsError) {
         inputName.value = ''
@@ -39,6 +72,10 @@ function validate(){
         inputEmail.value = ''
         inputMessage.value = ''
     }
+}
+
+function validateMessage(message) {
+    return message.length > 0 && message.length <= 500
 }
 
 function validateEmail(email){

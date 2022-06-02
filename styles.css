@@ -94,7 +94,7 @@ hr{
     background: url(./img/showcase-copia.jpg) no-repeat center center/cover;
    /* background: brown;*/
     padding: 20px;        /* Para separar la imagen de los demas elementos que agregemos debajo*/ 
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     display: flex;               /* Para centrar el texo que tengamos dentro*/
     flex-direction:column;      /* Para que el texto se encuentre debajo*/
     align-items: center;         /* Para centrar el texto*/
@@ -129,8 +129,16 @@ hr{
 }
 
 
+/* Introduccion */
+#Introduccion {
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
 
-/**/
+
+
+/* Extracciones */
 #extractions {
     display: grid;
     grid-template-columns: repeat(4, 1fr);   /* Podria poner tambien: 1fr, 1fr, ...  por cada columna, pero no me las dejaria una al lado de la otra */
@@ -149,9 +157,8 @@ hr{
 }
 
 #extractions img {
-    max-width: 50%;
-    max-height: 50%;
-    
+    width: 50%;
+    height: 150px;   
 }
 
 #extractions h3 {
@@ -190,6 +197,7 @@ hr{
     grid-template-columns: repeat(4, 1fr);   /* Podria poner tambien: 1fr, 1fr, ...  por cada columna, pero no me las dejaria una al lado de la otra */
     gap: 25px;                               /* Espaciado interno*/
     height: 10px 0;
+    padding-bottom: 40px ;
 }
 
 /* --Para agregarle fondo a cada cards--*/
@@ -287,59 +295,6 @@ hr{
 
 
 
-/*---------------------- Latte-Art -----------------------*/
-.section-1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-gap: 20px;   
-    padding: 20px;                           
-    height: 10px 0;
-}
-
-.section-1 > article,
-.section-1 .item 
-.section-1 .content-1 {
-    background: #e9d3c0;    
-    color: #262626;
-    padding: 20px;
-    border-radius: 4px;
-}
-
-.section-1 img {
-    width: 100%;
-    height: 300px;
-}
-
-.section-1 .content-1 {
-    grid-column: span 2;   /* Me permite que ocupe dos espacios de columnas*/
-}
-
-.section-1 h2 {
-    font-size: 20px;
-    margin: 10px 0;  
-}
-
-.section-2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);    
-    padding: 20px;                           
-    height: 10px 0;
-}
-
-.section-2 > article,
-.section-2 .video 
-.section-2 .content-1 {
-    background: #e9d3c0;    
-    color: #262626;
-    padding: 20px;
-    border-radius: 4px;
-}
-
-.section-2 h2 {
-    font-size: 20px;
-    margin: 10px 0;  
-}
-
 
 /*--------------------- CONTACTO -------------------*/
 .form {
@@ -417,13 +372,25 @@ hr{
     .nav-main ul.nav-menu-right{
         margin-right: 40px;
     }
+    .nav-main a {
+        color: #fff;
+    }
 
-    .cards {
+    #extractions {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .cards-banner .content {
+    #extractions img {
         width: 50%;
+        height: 100px;
+    }
+
+    #cards-banner .content {
+        width: 50%;
+    }
+
+    #cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /*
@@ -432,18 +399,20 @@ hr{
     }
     */
 
+
 }
 
-@media (max-width: 576px) {
-    .cards {
+@media (max-width: 576px) {  /**/
+
+    #cards {
         grid-template-columns: 1fr;
     }
 
-    .cards img{
+    #cards img{
         height: 250px;   /* Aumento el tamaño de las imagenes para que no luzcan tan compactas */
     }
 
-    .cards-banner .content {
+    #cards-banner .content {
         width: 100%;
         padding: 60px 20px;
     }
