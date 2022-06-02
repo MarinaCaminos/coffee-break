@@ -157,18 +157,21 @@
                         <h3 class="tag"><span>¿Tienes alguna duda? ¡Contactanos!</span></h3>
 
                         <label for="name">Nombre <span>*</span></label>
-                        <input name="name" required type="text" id="name" placeholder="Nombre">
+                        <input name="name" required autofocus type="text" id="name" placeholder="Nombre">
+                        <div id="errorName" hidden> ¡Error! </div>
 
-                        <label for="name-2">Apellido <span>*</span></label>
-                        <input name="name-2" required type="text" id="name-2" placeholder="Apellido">
+                        <label for="lastName">Apellido <span>*</span></label>
+                        <input name="lastName" required autofocus type="text" id="lastName" placeholder="Apellido">
+                        <div id="errorLastName" hidden> ¡Error! </div>
 
                         <label for="email">Correo electrónico <span>*</span></label>
-                        <input name="email" type="text" id="email" required placeholder="coffeeStyle@gmail.com">
+                        <input name="email" type="text" id="email" required autofocus placeholder="coffeeBreak@gmail.com">
+                        <div id="errorEmail" hidden> ¡Error! </div>
 
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+                        <label for="message">Mensaje <span>*</span></label>
+                        <textarea id="message" name="message" cols="30" rows="10" required autofocus title="test"></textarea>
 
-                        <button type="submit" class="btn" id="validate"> Enviar mensaje</button>
+                        <input type="button" value="Enviar mensaje" class="btn" id="validate"></input>
                     </form>
                    
                 </div>
