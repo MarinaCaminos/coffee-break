@@ -23,7 +23,7 @@ function validate(){
     if(!existsError) {
         inputName.setCustomValidity('');
     } else {
-        inputName.setCustomValidity('¡Error! Cambo inválido');
+        inputName.setCustomValidity('¡Error! Campo inválido');
         inputName.reportValidity();
         return;
     }
@@ -35,7 +35,7 @@ function validate(){
     if(!existsError) {
         inputLastName.setCustomValidity('');
     } else {
-        inputLastName.setCustomValidity('¡Error! Cambo inválido');
+        inputLastName.setCustomValidity('¡Error! Campo inválido');
         inputLastName.reportValidity();
         return;
     }
@@ -47,7 +47,7 @@ function validate(){
     if(!existsError) {
         inputEmail.setCustomValidity('');
     } else {
-        inputEmail.setCustomValidity('¡Error! Cambo inválido');
+        inputEmail.setCustomValidity('¡Error! Campo inválido');
         inputEmail.reportValidity();
         return;
     }
@@ -59,7 +59,7 @@ function validate(){
     if(!existsError) {
         inputMessage.setCustomValidity('');
     } else {
-        inputMessage.setCustomValidity('¡Error! Cambo inválido');
+        inputMessage.setCustomValidity('¡Error! Campo vacio');
         inputMessage.reportValidity();
         return;
     }
