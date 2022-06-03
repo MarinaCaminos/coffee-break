@@ -2,7 +2,7 @@ document.querySelector('.menu-btn').addEventListener('click', () =>{
     document.querySelector('.nav-menu').classList.toggle('show')
 })
 
-document.documentElement.style.setProperty('--animate-duration', '5s');
+document.documentElement.style.setProperty('--animate-duration', '10s');
 
 
 const inputName = document.getElementById('name')
@@ -15,8 +15,6 @@ form.addEventListener('click', validate)
 
 function validate(){
 
-    console.log('Entre')
-
     let existsError = false;
     const errorName = document.getElementById('errorName')
     let result = validateName(inputName.value)
@@ -25,7 +23,7 @@ function validate(){
     if(!existsError) {
         inputName.setCustomValidity('');
     } else {
-        inputName.setCustomValidity('Field must be a number.');
+        inputName.setCustomValidity('¡Error! Cambo inválido');
         inputName.reportValidity();
         return;
     }
@@ -37,7 +35,7 @@ function validate(){
     if(!existsError) {
         inputLastName.setCustomValidity('');
     } else {
-        inputLastName.setCustomValidity('Field must be a number.');
+        inputLastName.setCustomValidity('¡Error! Cambo inválido');
         inputLastName.reportValidity();
         return;
     }
@@ -49,7 +47,7 @@ function validate(){
     if(!existsError) {
         inputEmail.setCustomValidity('');
     } else {
-        inputEmail.setCustomValidity('Field must be a number.');
+        inputEmail.setCustomValidity('¡Error! Cambo inválido');
         inputEmail.reportValidity();
         return;
     }
@@ -61,7 +59,7 @@ function validate(){
     if(!existsError) {
         inputMessage.setCustomValidity('');
     } else {
-        inputMessage.setCustomValidity('Field must be a number.');
+        inputMessage.setCustomValidity('¡Error! Cambo inválido');
         inputMessage.reportValidity();
         return;
     }

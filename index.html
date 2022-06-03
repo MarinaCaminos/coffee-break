@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoffeeStyle</title>
+    <title>CoffeeBreak</title>
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- FONT OSWALD -->
@@ -30,19 +30,13 @@
             <img src="img/brand.png" alt="CoffeeBreak LOGO"  class="nav-brand">                          
             <ul class="nav-menu show">  <!-- Le agrego la clase 'show' para sber cuando mostrarlo con el boton -->
                 <li>
-                    <a href="#"> Historia del cafe </a>
-                </li>
-                <li>
-                    <a href="#"> Tipos de cafe </a>
-                </li>
-                <li>
-                    <a href="#"> Curiosidades </a>
-                </li>
-                <li>
-                    <a href="#"> Latte Art </a>
+                    <a href="#contenido-1"> Métodos de extracción </a>
                 </li>
                 <li>
                     <a href="#cards-banner"> Cursos </a>
+                </li>
+                <li>
+                    <a href="#cards"> Noticias </a>
                 </li>
                 <li>
                     <a href="#contact"> ¡Contáctanos! </a>
@@ -55,19 +49,29 @@
 
         <!-- SHOWCASE (ventana principal) -->
         <header class="showcase">
-            <h1 class="animate__animated animate__slideInDown"> Coffee Break </h1>
+            <h1 class="animate__animated animate__slideInDown animate__delay-4s"> Coffee Break </h1>
             <p> No hay mejor forma de tomar un descanso, que con un café...</p>
           <!--  <a href="#" class="btn"> Read More <i class="fas fa-angle-double-right"></i></a>    class="btn" creo esta clase para poder reutilizar mas botones-->
         </header>
 
 
         <!-- Seccion dividida en 4, estilo de tarjetas. Generalmente usado como seccion de noticias -->
-        <section id="Introduccion">
+        <section id="contenido-1">
             <div class="texto">
-                <h3> </h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia alias officiis perspiciatis culpa, animi molestias a necessitatibus quidem saepe natus nesciunt perferendis blanditiis esse. Autem doloremque magni unde delectus sit.</p>
+                <h2>¿Qué es el café? </h2>
+                <p> El café, cuyo significado es "vino del grano", es originario de Etiopía y se considera la segunda bebida más consumida del 
+                    mundo, después del agua. El café tiene una gran versatilidad, su consumo en hogares fue aumentando hasta convertirse en algo
+                    común y hoy en día podemos disfrutarlo en todas sus formas: taza, vaso, pocillo, bebida, cóctel, caliente, frío o hasta en un postre.</p>
+                    Una manera de preparar un buen café, es conociendo los distintos métodos de extracción y su correcta forma de hacerlo, ya que afecta
+                    directamente a su sabor.
             </div>
+        </section>
 
+        <section id="contenido-2">
+            <div>
+                <h3> Métodos de extracción </h3>
+                <p> Hay muchos métodos de extracción del café, a continuación mencionaremos algunos de los más conocidos.</p>
+            </div>
         </section>
 
         <section id="extractions">    
@@ -96,12 +100,12 @@
             </div>
             <div class="each-extractions" >
                 <img src="img/aeropres.png" alt="">
-                <h3> Aeropres </h3>
+                <h3> AeropresS </h3>
                 <p> </p>
             </div>
             <div class="each-extractions" >
                 <img src="img/espresso.png" alt="">
-                <h3> Maquina Industrial </h3>
+                <h3> Máquina Industrial </h3>
                 <p></p>
             </div>
             <div class="each-extractions" >
@@ -113,7 +117,7 @@
 
         <div class="video">
             <p> Si quieres conocer un poco más sobre cada método de extracción, te recomendamos el siguente video </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/J--Bt0XsOuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/J--Bt0XsOuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
 
@@ -122,7 +126,7 @@
                 <h2> Cursos </h2>
                 <p> Si queres aprender mas sobre el café y capacitarte para crear el mejor Latte Art </p>
                 <p>¡Mira estos cursos recomendados!</p>
-                <a href="#" class="btn"> Más <i class="fas fa-angle-double-right"></i></a>
+                <a href="workingPage.html" class="btn"> Más <i class="fas fa-angle-double-right"></i></a>
             </div>
 
         </section>
@@ -131,26 +135,26 @@
             <div class="each-cards" >
                 <img src="img/Historia-del-cafe.jpg" alt="">
                 <h3> Historia del café </h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, nobis inventore ratione error eligendi ipsam, accusamus iure voluptatem deleniti earum rerum ab aut reiciendis ipsum esse? Aliquam tempore fugit iure.</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+                <p> Los historiadores sitúan las primeras plantas de café en las regiones montañosas de Etiopía, antes del siglo IX. Desde allí pasaron al vecino Yemen, situado al Sur de la Península Arábica, desde donde fueron llevadas hasta Ceilán y la India....</p>
+                <a href="workingPage.html">Learn More <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div class="each-cards">
                 <img src="img/Tipos-de-cafe.jpg" alt="">
-                <h3> Tipos de cafe </h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, nobis inventore ratione error eligendi ipsam, accusamus iure voluptatem deleniti earum rerum ab aut reiciendis ipsum esse? Aliquam tempore fugit iure.</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+                <h3> Tipos de café </h3>
+                <p> Durante años la humanidad ha perfeccionando el arte de hacer café, por lo cual, en esa evolución ha logrado distintos procesos y mezclas, consiguiendo una mayor cantidad de tipos de cafés. Aquí te presentaremos los tipos de cafés más populares, y  te ayudaremos a que conozcas cómo y de qué están hechos.</p>
+                <a href="workingPage.html">Learn More <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div class="each-cards">
                 <img src="img/granos-cafe.jpg" alt="">
                 <h3> Curiosidades </h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, nobis inventore ratione error eligendi ipsam, accusamus iure voluptatem deleniti earum rerum ab aut reiciendis ipsum esse? Aliquam tempore fugit iure.</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+                <p> El café es un componente fundamental en nuestro día a día, pero seguro que hay muchas cosas sobre él que no conoces. Te mostramos a continuación 10 curiosidades sobre el café. </p>
+                <a href="workingPage.html">Learn More <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div class="each-cards">
                 <img src="img/Latte-art.jpg" alt="">
                 <h3> Latte Art </h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, nobis inventore ratione error eligendi ipsam, accusamus iure voluptatem deleniti earum rerum ab aut reiciendis ipsum esse? Aliquam tempore fugit iure.</p>
-                <a href="Latte-Art.html">Learn More <i class="fas fa-angle-double-right"></i></a>
+                <p> El Latte Art es una técnica que se utiliza para la realización de dibujos en la superficie del café. El diseño emerge en la medida en la que la crema emulsionada de la leche entra en contacto con el café. Hay una gran variedad de diseños, y acá te mostraremos algunos de ellos.</p>
+                <a href="workingPage.html">Learn More <i class="fas fa-angle-double-right"></i></a>
             </div>
         </section>
 
@@ -204,67 +208,19 @@
         <div class="footer-container">
             <ul>
                 <li>
+                    <h2> Contactos </h2>
                     <a href="#">
-                        <h3>Titulo 1</h3>
+                        <h3><i class="fa fa-envelope" aria-hidden="true"></i> coffeebreak@gmail.com</h3>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <h3>Titulo 2</h3>
+                        <h3><i class="fas fa-phone"></i> +54-xx-xxxxxxxx </h3>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <h3>Titulo 3</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Titulo 4</h3>
-                    </a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <h3>Titulo 1</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Titulo 2</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Titulo 3</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Titulo 4</h3>
-                    </a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <h3>Titulo 1</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Titulo 2</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Titulo 3</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Titulo 4</h3>
+                        <h3><i class="fab fa-whatsapp"></i> +54-9-xx-xxxxxxxx</h3>
                     </a>
                 </li>
             </ul>
